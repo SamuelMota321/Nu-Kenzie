@@ -11,11 +11,10 @@ export const FinanceSection = () => {
     }
 
     return (
-        <>
+        <section className="container grid">
             <FinanceForm onSubmit={handleSubmit} />
             <TotalValue financeData={financeData} />
             <FinanceList financeData={financeData} setFinanceData={setFinanceData}/>
-            
-        </>
+        </section>
     )
 }

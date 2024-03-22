@@ -7,10 +7,10 @@ export const FinanceList = ({ financeData, setFinanceData }) => {
     };
 
     return (
-        <div>
-            <h1>Resumo financeiro</h1>
+        <div className='grid-position-2'>
+            <h1 className='title sm padding' >Resumo financeiro</h1>
             {financeData.length === 0 ? (
-                <p>Você ainda não possui lançamentos</p>
+                <h1 className='title md'>Você ainda não possui lançamentos</h1>
             ) : (
                 financeData.map((data, index) => (
                     <FinanceCard
