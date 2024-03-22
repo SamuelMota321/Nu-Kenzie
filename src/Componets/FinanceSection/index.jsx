@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { FinanceForm } from "./FinanceForm/index.jsx"
 import { FinanceList } from "./FinanceList/index.jsx"
+import { TotalValue } from "./TotalValueCard/index.jsx"
 
 export const FinanceSection = () => {
     const [financeData, setFinanceData] = useState([])
@@ -12,7 +13,9 @@ export const FinanceSection = () => {
     return (
         <>
             <FinanceForm onSubmit={handleSubmit} />
-            <FinanceList financeData={financeData} />
+            <TotalValue financeData={financeData} />
+            <FinanceList financeData={financeData} setFinanceData={setFinanceData}/>
+            
         </>
     )
 }
