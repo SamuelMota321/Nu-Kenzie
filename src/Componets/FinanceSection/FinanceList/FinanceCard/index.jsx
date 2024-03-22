@@ -10,7 +10,7 @@ export const FinanceCard = ({ description, valor, valorType, onDelete }) => {
             </div>
             <div>
                 <p className="paragraph padding"> R$ {valor}</p>
-                <button onClick={onDelete} className="btn secondary">Excluir</button>
+                <button onClick={onDelete} className={` ${styles.btn} btn secondary`}>Excluir</button>
             </div>
         </li>
     )

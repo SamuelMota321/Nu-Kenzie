@@ -20,13 +20,13 @@ export const FinanceForm = ({ onSubmit = event => event }) => {
             <form onSubmit={handleSubmit} className="form">
                 <div>
                     <label htmlFor="description" className="paragraph headline">Descrição</label>
-                    <input type="text" name="description" value={description} onChange={(event) => setDescription(event.target.value)} required placeholder="Digite aqui sua descrição" />
+                    <input type="text" name="description" value={description} onChange={(event) => setDescription(event.target.value)} required placeholder="Digite aqui sua descrição"  maxLength={25}/>
                     <p className="paragraph light"> Ex: compra de roupas</p>
                 </div>
 
                 <div>
                     <label htmlFor="valor" className="paragraph headline">Valor (R$) </label>
-                    <input type="number" name="valor" value={valor} onChange={(event) => setValue(event.target.value)} required placeholder="1" />
+                    <input type="number" name="valor" value={valor} onChange={(event) => setValue(event.target.value)} required placeholder="1" max={100000000} />
                 </div>
 
                 <div>

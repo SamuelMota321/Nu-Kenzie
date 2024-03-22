@@ -1,5 +1,6 @@
 .cardGreen{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     list-style: none;
@@ -12,6 +13,7 @@
 
 .cardGray{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     list-style: none;
@@ -27,4 +29,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.btn {
+    margin-bottom: 10px;
 }
